@@ -1,15 +1,16 @@
 #!/bin/bash
-read f1
-read f2
-if [ -f $f1 ]
+a=$1
+b=$2
+if [ -f $a ]
 then
-	echo "$f1 file exist"
+        echo "$a file exist"
 else
-	echo "$f1 file does not exit"
+        echo "$a file does not exit"
 fi
-if [ -f $f2 ]
+if [ -f $b ]
 then
-	echo "$f2 file exist"
+        echo "$b file exist"
 else
-	echo "$f2 file does not exist"
-	fi
+        echo "$b file does not exist"
+        fi
+
