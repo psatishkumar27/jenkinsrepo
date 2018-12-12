@@ -1,10 +1,10 @@
 #!/bin/bash
-read basic
-dp=`expr $basic \* 50 / 100`
-da=`expr $basic \* 35 / 100`
-hra=`expr $basic \* 8 / 100`
-ma=`expr $basic \* 3 / 100`
-pf=`expr $basic \* 10 /100`
-gs=`expr $basic + $hra + $dp + $da + $ma - $pf`
+a=$1
+dp=`expr $1 \* 50 / 100`
+da=`expr $1 \* 35 / 100`
+hra=`expr $1 \* 8 / 100`
+ma=`expr $1 \* 3 / 100`
+pf=`expr $1 \* 10 /100`
+gs=`expr $1 + $hra + $dp + $da + $ma - $pf`
 echo "value print $gs"
 
