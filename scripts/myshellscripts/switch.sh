@@ -1,6 +1,7 @@
 #!/bin/bash
 a=$1
 b=$2
+c=$choice
 case $choice in
 1)
 	expr $a + $b
